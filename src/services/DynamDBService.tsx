@@ -52,6 +52,7 @@ export default function DynamDBService() {
     };
 
     const getTransactionByCategory = async () => {
+        // @ts-ignore
         await client.models.Transaction.listByCategoryAndTransactionID({
             category: "DANGER",
             transactionID: {
