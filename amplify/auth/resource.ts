@@ -10,4 +10,12 @@ export const auth = defineAuth({
       verificationEmailSubject: 'Welcome! Verify your email!'
     },
   },
+  userAttributes: {
+    givenName: {
+      required: true
+    },
+    phoneNumber: {
+      required: false
+    }
+  }
 });
